@@ -11,6 +11,7 @@ namespace WinFormsAppPierreFeuilleCiseauGraphique
         private void Form1_Load(object sender, EventArgs e)
         {
             panelJeu.Visible = false;
+            pnlRegles.Visible = false;
 
         }
 
@@ -18,11 +19,15 @@ namespace WinFormsAppPierreFeuilleCiseauGraphique
         {
             MessageBox.Show("Lancement de la partie !");//debug
             panelJeu.Visible = true;
+            pnlRegles.Visible = false;
+
         }
 
         private void btnRegles_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Voici les règles !");//debug
+            panelJeu.Visible = true;
+            pnlRegles.Visible = true;
+
         }
 
         private void btnQuitter_Click(object sender, EventArgs e)
@@ -31,9 +36,44 @@ namespace WinFormsAppPierreFeuilleCiseauGraphique
             Application.Exit();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonCiseaux_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonRetour_Click(object sender, EventArgs e)
+        {
+            panelJeu.Visible = false;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelJeu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonRetourRegles_Click(object sender, EventArgs e)
+        {
+            panelJeu.Visible = false;
         }
     }
 }
